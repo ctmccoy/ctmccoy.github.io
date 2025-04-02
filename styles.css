@@ -16,8 +16,12 @@ body {
     height: 100%;
     width: 160px;
     background-color: #222;
-    padding-top: 20px;
+    display: flex;
+    flex-direcdtion: column;
+    justify-content: center;
+    align-items: center;
     z-index: 1000;
+    padding: 0;
 }
 
 .sidebar ul {
