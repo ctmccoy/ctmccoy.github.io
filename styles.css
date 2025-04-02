@@ -21,6 +21,9 @@ body {
     justify-content: space-between; /* 👈 separates nav and footer */
     align-items: center;
     padding: 20px 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow-y: auto;
     z-index: 1000;
 }
 
