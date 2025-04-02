@@ -1,43 +1,70 @@
-/* Basic styles for the website */
+/* Basic styles for CTs website */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    margin-left: 160px; /* space for sidebar */
 }
 
+/* Sidebar navigation */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 160px;
+    background-color: #222;
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 0;
+    transition: background-color 0.2s;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+}
+
+/* Header styles */
 header {
     position: relative;
     background-color: #333;
     color: white;
     padding: 20px;
-    text-align: center;
 }
 
-main {
-    padding: 20px;
-}
-
-h1, h2 {
-    color: #333;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
+/* Header text fixes */
 header h1,
 header p {
     color: white;
 }
 
+/* Align header text */
+.header-text {
+    margin-left: 120px;
+    text-align: left;
+}
+
+/* Profile picture */
 .profile-pic-container {
     position: absolute;
     top: 20px;
@@ -52,7 +79,39 @@ header p {
     object-fit: cover;
 }
 
-.header-text {
-    margin-left: 120px; /* push text to the right */
-    text-align: left;
+/* Main content */
+main {
+    padding: 20px;
+}
+
+/* Section headers */
+h1, h2 {
+    color: #333;
+}
+
+/* Projects list style */
+.projects li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.projects a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.projects a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: calc(100% - 160px); /* account for sidebar width */
+    bottom: 0;
+    left: 160px;
 }
