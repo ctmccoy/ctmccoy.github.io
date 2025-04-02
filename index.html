@@ -11,27 +11,29 @@
 
     <!-- Sidebar Navigation -->
     <div class="sidebar">
-        <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ul>
-<!-- Sidebar Footer (INSIDE sidebar now) -->
-    <div class="sidebar-footer">
-        <a href="mailto:mccoysecdev@gmail.com" target="_blank" title="Email">
-            <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/ctmccoy" target="_blank" title="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-        </a>
+        <div class="sidebar-nav">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
 
-        <!-- Dark Mode Toggle -->
-        <label class="switch" title="Toggle dark mode">
-            <input type="checkbox" id="darkModeToggle">
-            <span class="slider"></span>
-        </label>
-    </div>
-        
+        <!-- Sidebar Footer -->
+        <div class="sidebar-footer">
+            <a href="mailto:mccoysecdev@gmail.com" target="_blank" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ctmccoy" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <!-- Dark Mode Toggle -->
+            <label class="switch" title="Toggle dark mode">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider"></span>
+            </label>
+        </div>
     </div>
 
     <!-- Main Header Section -->
@@ -40,14 +42,14 @@
             <img src="selfavatar.png" alt="Selfie" class="profile-pic">
         </div>
         <div class="header-text">
-            <h1>HI, I'm CT! - Welcome to My GitHub Page</h1>
-            <p>Information Security Operations! | Threat Hunting!.</p>
+            <h1>HI, I'm CT! - Welcome to My Website!!</h1>
+            <p>Information Security! | Threat Intelligence!.</p>
         </div>
     </header>
 
     <main>
 
-         <!-- About Section -->
+        <!-- About Section -->
         <section>
             <h2>About Me</h2>
             <p>I like to stay on the frontier of cyberwarfare tactics, the techniques of blackhats, and procedures of the most hardened systems in the galaxy!</p>
@@ -75,9 +77,10 @@
                     <p>Reads and aggregates network data from CSV files exported from Wireshark. Extracts top IPs and generates a summary report.</p>
                     <a href="https://github.com/ctmccoy/TrafficCaptureAnalysis" target="_blank">View on GitHub</a>
                 </div>
+
             </div>
         </section>
-    
+
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact</h2>
@@ -91,12 +94,11 @@
     </footer>
 
     <script src="script.js"></script>
-
     <script>
-    const toggle = document.getElementById('darkModeToggle');
-    toggle.addEventListener('change', () => {
-        document.body.classList.toggle('dark');
-    });
+        const toggle = document.getElementById('darkModeToggle');
+        toggle.addEventListener('change', () => {
+            document.body.classList.toggle('dark');
+        });
     </script>
 </body>
 </html>
