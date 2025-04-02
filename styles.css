@@ -31,3 +31,10 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+header h1,
+header p {
+    color: white;
+}
+
+
