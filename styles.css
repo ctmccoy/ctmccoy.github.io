@@ -52,4 +52,7 @@ header p {
     object-fit: cover;
 }
 
-
+.header-text {
+    margin-left: 120px; /* push text to the right */
+    text-align: left;
+}
