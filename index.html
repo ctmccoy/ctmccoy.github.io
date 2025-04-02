@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CT's WEBSITE!!</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -15,6 +16,22 @@
             <li><a href="#projects">PROJECTS</a></li>
             <li><a href="#contact">CONTACT</a></li>
         </ul>
+<!-- Sidebar Footer (INSIDE sidebar now) -->
+    <div class="sidebar-footer">
+        <a href="mailto:mccoysecdev@gmail.com" target="_blank" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ctmccoy" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <!-- Dark Mode Toggle -->
+        <label class="switch" title="Toggle dark mode">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+        
     </div>
 
     <!-- Main Header Section -->
@@ -29,33 +46,47 @@
     </header>
 
     <main>
+
+
         <!-- Projects Section -->
         <section id="projects">
             <h2>Projects</h2>
             <div class="project-list">
+
                 <div class="project-card">
-                    <h3>PCAP Analyzer</h3>
-                    <p>Python tool that parses and visualizes PCAP files using PyShark, TShark, and Pandas.</p>
+                    <h3>PCAP Analyzer (Python)</h3>
+                    <p>Analyzes PCAP files using PyShark, TShark, and Pandas. Visualizes traffic, DNS, and HTTP data.</p>
                     <a href="https://github.com/ctmccoy/pcap-analyzer" target="_blank">View on GitHub</a>
                 </div>
+
                 <div class="project-card">
-                    <h3>Threat Intelligence Feeds</h3>
-                    <p>Automates IP/domain lookups using VirusTotal, AbuseIPDB, and OTX APIs for SOC operations.</p>
-                    <a href="https://github.com/ctmccoy/fetch-threat-feeds" target="_blank">View on GitHub</a>
+                    <h3>Automated Threat Intelligence (Python)</h3>
+                    <p>Collects real-time threat data from VirusTotal, AbuseIPDB, and OTX APIs. Parses, saves, and analyzes indicators of compromise.</p>
+                    <a href="https://github.com/ctmccoy/automated-threat-intelligence" target="_blank">View on GitHub</a>
                 </div>
+
+                <div class="project-card">
+                    <h3>Traffic Capture Analysis (Java)</h3>
+                    <p>Reads and aggregates network data from CSV files exported from Wireshark. Extracts top IPs and generates a summary report.</p>
+                    <a href="https://github.com/ctmccoy/TrafficCaptureAnalysis" target="_blank">View on GitHub</a>
+                </div>
+
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>How to reach me...</p>
-        </section>
 
-        <!-- About Section -->
+         <!-- About Section -->
         <section>
             <h2>About Me</h2>
             <p>I like to stay on the frontier of cyberwarfare tactics, the techniques of blackhats, and procedures of the most hardened systems in the galaxy!</p>
+        </section>
+
+       
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>E-Mail: mccoysecdev@gmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/ctmccoy" target="_blank">linkedin.com/in/ctmccoy</a></p>
         </section>
     </main>
 
