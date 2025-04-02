@@ -13,18 +13,18 @@
     <div class="sidebar">
         <div class="sidebar-nav">
             <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#home"><i class="fas fa-home"></i> HOME</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> PROJECTS</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> CONTACT</a></li>
             </ul>
         </div>
 
         <!-- Sidebar Footer -->
         <div class="sidebar-footer">
-            <a href="mailto:mccoysecdev@gmail.com" target="_blank" title="Email">
+            <a href="mailto:mccoysecdev@gmail.com" target="_blank" title="Email" aria-label="Email">
                 <i class="fas fa-envelope"></i>
             </a>
-            <a href="https://www.linkedin.com/in/ctmccoy" target="_blank" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/ctmccoy" target="_blank" title="LinkedIn" aria-label="LinkedIn">
                 <i class="fab fa-linkedin"></i>
             </a>
 
@@ -39,7 +39,7 @@
     <!-- Main Header Section -->
     <header id="home">
         <div class="profile-pic-container">
-            <img src="selfavatar.png" alt="Selfie" class="profile-pic">
+            <img src="selfavatar.png" alt="Selfie" class="profile-pic" srcset="selfavatar-small.png 480w, selfavatar.png 800w">
         </div>
         <div class="header-text">
             <h1>HI, I'm CT! - Welcome to My Website!!</h1>
@@ -91,13 +91,29 @@
 
     <footer>
         <p>&copy; 2025 My GitHub Page</p>
+        <div class="footer-social">
+            <a href="https://twitter.com/ctmccoy" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/ctmccoy" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
     </footer>
 
     <script src="script.js"></script>
     <script>
-        const toggle = document.getElementById('darkModeToggle');
-        toggle.addEventListener('change', () => {
-            document.body.classList.toggle('dark');
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggle = document.getElementById('darkModeToggle');
+            const body = document.body;
+            const sidebar = document.querySelector('.sidebar');
+            const headerText = document.querySelector('.header-text');
+            const projectCards = document.querySelectorAll('.project-card');
+            const footerSocialLinks = document.querySelectorAll('.footer-social a');
+
+            toggle.addEventListener('change', () => {
+                body.classList.toggle('dark');
+                sidebar.classList.toggle('dark');
+                headerText.classList.toggle('dark');
+                projectCards.forEach(card => card.classList.toggle('dark'));
+                footerSocialLinks.forEach(link => link.classList.toggle('dark'));
+            });
         });
     </script>
 </body>
