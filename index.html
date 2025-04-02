@@ -95,5 +95,12 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script>
+    const toggle = document.getElementById('darkModeToggle');
+    toggle.addEventListener('change', () => {
+        document.body.classList.toggle('dark');
+    });
+    </script>
 </body>
 </html>
