@@ -233,10 +233,10 @@ footer {
     padding: 20px;
     background-color: #333;
     color: white;
-    position: relative;
+    position: fixed;
     bottom: 0;
-    width: calc(100% - 160px); /* Adjust for sidebar width */
-    margin-left: 160px; /* Adjust for sidebar width */
+    width: 100%; /* Adjust for sidebar width */
+    left: 0; /* Adjust for sidebar width */
 }
 
 .footer-social {
